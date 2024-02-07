@@ -13,19 +13,19 @@ const header = {
     list: [
         {
             title: "Acceuil",
-            link: "",
+            link: "/",
         },
         {
             title: "A propos",
-            link: "",
+            link: "/",
         },
         {
             title: "Projets",
-            link: "",
+            link: "/",
         },
         {
             title: "Contact",
-            link: "",
+            link: "/",
         }
     ]
 }

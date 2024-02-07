@@ -1,56 +1,58 @@
 "use client"
 import { useState } from "react";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
+import { MdClose, MdEmail } from "react-icons/md";
 import { header } from "./const";
+import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    const [open, setOpen] = useState(false);
+
+    const toggleOpen = () => {
+        setOpen(!open)
+    }
 
     return (
-        <nav className="sticky top-0 z-50">
-            <div className="lg:block hidden bg-secondary text-white py-2">
-                <div className="container mx-auto lg:flex hidden items-center justify-between px-3">
-
-                    <span className="flex items-center gap-x-3">
-                        <FaLocationDot className="text-primary text-xl" />
-                        <p className="text-[15px]">{header.address}</p>
-                    </span>
-
-                    <div className="flex items-center gap-x-6">
-                        <span className="flex items-center gap-x-3">
-                            <FaPhone className="text-primary text-xl" />
-                            <p className="text-[15px]">{header.number}</p>
-                        </span>
-
-                        <span className="flex items-center gap-x-3">
-                            <MdEmail className="text-primary text-xl" />
-                            <p className="text-[15px]">{header.email}</p>
-                        </span>
-                    </div>
-
-                </div>
+        <nav className="w-full shadow-md">
+        <div className="px-8 md:px-24 w-full flex justify-between items-center">
+            <div>
+                <img src={header.image.link} alt={header.image.alt} className="w-[90px]" />
             </div>
 
-            <div>
-                <ul>
-                    <li>
-                        <Link to="/">
-                            <img src={header.image.link} alt={header.image.alt} />
-                        </Link>
-                    </li>
-                    {
-                        header.list.map((item) => (
-                            <li>
-                                <Link to={item.link}>{item.title}</Link>
-                            </li>
-                        ))
-                    }
+            {
+                !open ? <FaBarsStaggered className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} /> : <MdClose className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} />
+            }
+
+            <ul className="hidden list-none md:flex gap-8 items-center">
+                {
+                    header.list.map((item) => (
+                        <li>
+                            <Link href={item.link} className="font-bold text-secondary cursor-pointer transition-all duration-500 hover:text-primary">{item.title}</Link>
+                        </li>
+                    ))
+                }
+            </ul>
+
+            <div className={`md:hidden absolute left-0 bg-white w-full px-8 transition-all duration-500 ${open ? 'top-[110px]' : 'top-[-410px]'} `}>
+                <ul className="rounded-[10px] py-8 border list-none flex flex-col max-w-full gap-6 justify-center text-center items-center">
+                {
+                    header.list.map((item) => (
+                        <li>
+                            <Link href={item.link} className="font-bold text-secondary">{item.title}</Link>
+                        </li>
+                    ))
+                }
                 </ul>
             </div>
+        </div>
+
+        <div>
+
+        </div>
         </nav>
-    )
-}
+    )    
+};
 
 export default Navbar
