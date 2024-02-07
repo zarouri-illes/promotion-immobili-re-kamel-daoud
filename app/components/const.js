@@ -1,6 +1,5 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import { Parallax } from "./Parallax";
+import { Landing } from "./Landing";
+import Propreties from "./Propreties";
 
 const header = {
     address: "Banque ABC, Bouira",
@@ -33,8 +32,7 @@ const header = {
 }
 
 export {
-    Navbar,
-    Parallax,
+    Landing,
+    Propreties,
     header,
-    Hero
 }

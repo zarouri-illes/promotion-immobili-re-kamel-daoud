@@ -1,21 +1,19 @@
 "use client"
 
-import React from 'react'
-import { Hero } from './const'
 import { useState } from "react";
-import { FaPhone, FaLocationDot } from "react-icons/fa6";
-import { MdClose, MdEmail } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { header } from "./const";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 
-export const Parallax = () => {
+export const Landing = () => {
 
     const [open, setOpen] = useState(false);
 
     const toggleOpen = () => {
         setOpen(!open)
     }
+
     return (
         <div className="w-full h-screen overflow-hidden relative grid place-items-center">
 
@@ -39,8 +37,8 @@ export const Parallax = () => {
                          }
                     </ul>
 
-                    <div className={`md:hidden absolute left-0 bg-white w-full px-8 transition-all duration-500 ${open ? 'top-[110px]' : 'top-[-410px]'} `}>
-                        <ul className="rounded-[10px] py-8 border list-none flex flex-col max-w-full gap-6 justify-center text-center items-center">
+                    <div className={`md:hidden absolute left-0 z-50  w-full px-8 transition-all duration-500 ${open ? 'top-[110px]' : 'top-[-410px]'} `}>
+                        <ul className="rounded-[10px] bg-white z-40 py-8 border list-none flex flex-col max-w-full gap-6 justify-center text-center items-center">
                             {
                                 header.list.map((item) => (
                                     <li>
@@ -53,8 +51,8 @@ export const Parallax = () => {
                 </div>
             </nav>
             
-            <section className="z-30  left-14 mt-[-200px] px-8">
-                <h1 className="text-secondary text-4xl font-bold md:text-6xl text-left">Trouvez la maison de vos reves</h1>
+            <section className="z-20 w-full absolute  md:left-[70px] md:max-w-[700px] md:mt-[-180px] mt-[-120px] px-8">
+                <h1 className="text-secondary text-[40px] md:leading-loose font-bold md:text-6xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
             </section>
 
             <div 
