@@ -1,4 +1,6 @@
 import Navbar from "./Navbar";
+import Hero from "./Hero";
+import { Parallax } from "./Parallax";
 
 const header = {
     address: "Banque ABC, Bouira",
@@ -32,5 +34,7 @@ const header = {
 
 export {
     Navbar,
-    header
+    Parallax,
+    header,
+    Hero
 }

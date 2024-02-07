@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="w-full shadow-md">
+        <nav className="w-full shadow-md " style={{backgroundColor: "#84afdc"}}>
         <div className="px-8 md:px-24 w-full flex justify-between items-center">
             <div>
                 <img src={header.image.link} alt={header.image.alt} className="w-[90px]" />
