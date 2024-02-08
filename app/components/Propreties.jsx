@@ -4,14 +4,14 @@ import { TfiLayoutPlaceholder } from "react-icons/tfi";
 
 const Propreties = () => {
     return (
-        <section className="px-24 w-full h-screen overflow-hidden relative place-items-center mt-16">
+        <section className="md:px-[70px] px-8 w-full h-screen overflow-hidden relative place-items-center mt-16">
 
             <div className="mb-4 w-full">
                 <p className="text-primary">Featured listings</p>
-                <h2 className="text-2xl font-bold">Available Propreties</h2>
+                <h2 className="text-2xl font-bold text-secondary">Available Propreties</h2>
             </div>
 
-            <div className=" flex flex-nowrap overflow-x-auto whitespace-nowrap p-4 gap-4">
+            <div className=" flex flex-nowrap overflow-x-auto whitespace-nowrap pb-8 gap-4">
                 <div className="border rounded-[10px]">
                     <div>
                         <img src="/propreties/ap1.jpg" alt="" className="rounded-t-[10px]"/>

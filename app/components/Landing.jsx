@@ -18,7 +18,7 @@ export const Landing = () => {
         <div className="w-full h-screen overflow-hidden relative grid place-items-center">
 
             <nav className="w-full shadow-md z-30 inset-0 absolute" style={{backgroundColor: "transparent"}}>
-                <div className="px-8 md:px-24 w-full flex justify-between items-center">
+                <div className="px-8 md:px-16 w-full flex justify-between items-center">
                     <div>
                         <img src={header.image.link} alt={header.image.alt} className="w-[90px]" />
                     </div>
@@ -27,7 +27,7 @@ export const Landing = () => {
                         !open ? <FaBarsStaggered className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} /> : <MdClose className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} />
                     }
 
-                    <ul className="hidden absolute right-[500px] list-none md:flex gap-8 items-center">
+                    <ul className="hidden md:absolute lg:right-[250px] md:right-[100px] xl:right-[500px] list-none md:flex gap-8 items-center">
                         {
                             header.list.map((item) => (
                                 <li>
@@ -51,8 +51,8 @@ export const Landing = () => {
                 </div>
             </nav>
             
-            <section className="z-20 w-full absolute  md:left-[70px] md:max-w-[700px] md:mt-[-180px] mt-[-120px] px-8">
-                <h1 className="text-secondary text-[40px] md:leading-loose font-bold md:text-6xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
+            <section className="z-20 w-full absolute md:left-[35px] xl:max-w-[800px]  md:max-w-[500px] md:mt-[-180px] mt-[-120px] px-8">
+                <h1 className="text-secondary text-[36px] md:leading-loose xl:text-7xl xl:leading-loose  font-bold md:text-5xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
             </section>
 
             <div 
