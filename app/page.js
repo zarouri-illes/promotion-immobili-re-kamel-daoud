@@ -1,10 +1,12 @@
-import { Landing, Propreties } from "./components/const";
+import { Accordion, FAQ, Landing, Propreties } from "./components/const";
 
 export default function Home() {
     return (
         <>
-            <Landing/>
+        
+            <Landing />
             <Propreties />
+            <FAQ />
         </>
     )
 }

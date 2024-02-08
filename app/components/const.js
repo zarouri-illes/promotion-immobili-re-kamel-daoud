@@ -1,5 +1,8 @@
-import { Landing } from "./Landing";
+import {Landing} from "./Landing";
 import Propreties from "./Propreties";
+import Accordion from "./Accordion";
+import FAQ from "./FAQ";
+
 
 const header = {
     address: "Banque ABC, Bouira",
@@ -31,8 +34,26 @@ const header = {
     ]
 }
 
+const faq = [
+    {
+        question: "Question 1",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, mollitia?"
+    },
+    {
+        question: "Question 2",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, mollitia?"
+    },
+    {
+        question: "Question 3",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, mollitia?"
+    },
+]
+
 export {
+    faq,
     Landing,
+    FAQ,
     Propreties,
     header,
+    Accordion
 }

@@ -11,7 +11,7 @@ export const Landing = () => {
     const [open, setOpen] = useState(false);
 
     const toggleOpen = () => {
-        setOpen(!open)
+        setOpen(!open);
     }
 
     return (
@@ -48,11 +48,11 @@ export const Landing = () => {
                             }
                         </ul>
                     </div>
-                </div>
+                </div> 
             </nav>
             
             <section className="z-20 w-full absolute md:left-[35px] xl:max-w-[800px]  md:max-w-[500px] md:mt-[-180px] mt-[-120px] px-8">
-                <h1 className="text-secondary text-[36px] md:leading-loose xl:text-7xl xl:leading-loose  font-bold md:text-5xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
+                <h1 className="text-secondary text-[36px] md:leading-relaxed xl:text-7xl xl:leading-relaxed  font-bold md:text-5xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
             </section>
 
             <div 
