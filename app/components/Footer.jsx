@@ -27,7 +27,7 @@ const Footer = () => {
                         {footer.extra.map((item)=>(
                         <div class={`${item.class}`}>
                             {item.icon}
-                            <p className=''>{item.text}</p>
+                            <p className='text-lg'>{item.text}</p>
                         </div>
                         ))}
                     </div>

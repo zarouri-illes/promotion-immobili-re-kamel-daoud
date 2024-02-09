@@ -132,7 +132,7 @@ const footer = {
         },
         {
             icon: <FaPhone className='text-3xl pr-2 text-primary' />,
-            text: "05 58 58 70 81 appele pour sex",
+            text: "05 58 58 70 81",
             class: "mb-4 flex max-w-[272px] gap-4 items-center justify-start"
         }
     ]
