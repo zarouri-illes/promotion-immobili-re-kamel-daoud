@@ -19,9 +19,7 @@
 }
   
 ::-webkit-scrollbar-track {
-    background: white;
-    outline: 2px solid #FF4C4C;
-    border-radius: 10px;
+    display: hidden;
 }
 
 ::-webkit-scrollbar-button { width: 50%; }

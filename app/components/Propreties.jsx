@@ -4,7 +4,7 @@ import { TfiLayoutPlaceholder } from "react-icons/tfi";
 
 const Propreties = () => {
     return (
-        <section className="md:px-[70px] px-8 w-full overflow-hidden relative place-items-center mt-16">
+        <section className="md:px-[70px] h-auto px-8 w-full overflow-hidden relative place-items-center mt-16">
 
             <div className="mb-4 w-full">
                 <p className="text-primary md:text-lg">Featured listings</p>
