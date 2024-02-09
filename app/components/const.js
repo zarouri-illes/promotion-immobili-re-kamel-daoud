@@ -2,6 +2,7 @@ import {Landing} from "./Landing";
 import Propreties from "./Propreties";
 import Accordion from "./Accordion";
 import FAQ from "./FAQ";
+import Footer from "./Footer";
 import Profile from "./Profile";
 
 
@@ -33,7 +34,40 @@ const header = {
             link: "/",
         }
     ]
-}
+};
+
+const propreties = [
+    {
+        address: "El Riche, Bouira",
+        title: "Appartement F3",
+        bed: "3",
+        surface: "45",
+        image: {
+            link: "/propreties/ap1.jpg",
+            alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
+        }
+    },
+    {
+        address: "El Riche, Bouira",
+        title: "Appartement F3",
+        bed: "3",
+        surface: "45",
+        image: {
+            link: "/propreties/ap1.jpg",
+            alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
+        }
+    },
+    {
+        address: "El Riche, Bouira",
+        title: "Appartement F3",
+        bed: "3",
+        surface: "45",
+        image: {
+            link: "/propreties/ap1.jpg",
+            alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
+        }
+    },
+]
 
 const faq = [
     {
@@ -61,15 +95,27 @@ const profile = {
         text: "Voir plus",
         link: "",
     }
+};
+
+const footer = {
+    title: "",
+    keyWord: "",
+    socials: [
+        {
+            
+        }
+    ]
 }
 
 export {
     faq,
     Landing,
+    propreties,
     profile,
     FAQ,
     Propreties,
     header,
+    Footer,
     Profile,
     Accordion
 }

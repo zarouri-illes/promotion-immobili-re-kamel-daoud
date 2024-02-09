@@ -20,7 +20,7 @@ export const Landing = () => {
             <nav className="w-full shadow-md z-30 inset-0 absolute" style={{backgroundColor: "transparent"}}>
                 <div className="px-8 md:px-16 w-full flex justify-between items-center">
                     <div>
-                        <img src={header.image.link} alt={header.image.alt} className="w-[90px]" />
+                        <img src={header.image.link} alt={header.image.alt} className="w-[90px] lg:w-[120px] xl:w-[150px]" />
                     </div>
 
                     {
@@ -31,7 +31,7 @@ export const Landing = () => {
                         {
                             header.list.map((item) => (
                                 <li>
-                                    <Link href={item.link} className="font-bold text-secondary cursor-pointer transition-all duration-500 hover:text-primary">{item.title}</Link>
+                                    <Link href={item.link} className="font-bold xl:text-2xl text-secondary cursor-pointer transition-all duration-500 lg:text-xl md:text-[16px] hover:text-primary">{item.title}</Link>
                                 </li>
                             ))
                          }
@@ -51,7 +51,7 @@ export const Landing = () => {
                 </div> 
             </nav>
             
-            <section className="z-20 w-full absolute md:left-[35px] xl:max-w-[800px]  md:max-w-[500px] md:mt-[-180px] mt-[-120px] px-8">
+            <section className="z-20 w-full absolute md:left-[35px] xl:max-w-[800px]  md:max-w-[500px] md:mt-[-180px] lg:mt-[-80px] xl:mt-[-150px] mt-[-120px] px-8">
                 <h1 className="text-secondary text-[36px] md:leading-relaxed xl:text-7xl xl:leading-relaxed  font-bold md:text-5xl text-left">Trouvez la maison de vos <span className='text-primary'>reves</span>.</h1>
             </section>
 
