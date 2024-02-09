@@ -1,4 +1,4 @@
-import { Accordion, FAQ, Landing, Propreties } from "./components/const";
+import { Accordion, FAQ, Landing, Profile, Propreties } from "./components/const";
 
 export default function Home() {
     return (
@@ -7,6 +7,7 @@ export default function Home() {
             <Landing />
             <Propreties />
             <FAQ />
+            <Profile />
         </>
     )
 }
