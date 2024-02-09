@@ -3,8 +3,10 @@ import Propreties from "./Propreties";
 import Accordion from "./Accordion";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import { FaPhone } from 'react-icons/fa6'
 import Profile from "./Profile";
-
+import { MdEmail } from 'react-icons/md'
+import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube } from 'react-icons/fa6'
 
 const header = {
     address: "Banque ABC, Bouira",
@@ -13,7 +15,7 @@ const header = {
 
     image: {
         link: "/logo.png",
-        alt: "Kamel Daoud Immobilier Bouira Promotion Algerie"
+        alt: "Kamel Daoud Immobilier Bouira Promotion Algerie",
     },
 
     list: [
@@ -98,11 +100,40 @@ const profile = {
 };
 
 const footer = {
-    title: "",
-    keyWord: "",
     socials: [
         {
-            
+            icon: <FaFacebook />,
+            link: "#",
+        },
+        {
+            icon: <FaInstagram />,
+            link: "#",
+        },
+        {
+            icon: <FaTiktok />,
+            link: "#",
+        },
+        {
+            icon: <FaYoutube />,
+            link: "#",
+        }
+    ],
+
+    extra: [
+        {
+            icon: <FaLocationDot className='text-4xl pr-2 text-primary' />,
+            text: "À côté de la banque ABC, Bouira, Algérie",
+            class: "mb-4 flex max-w-[272px] gap-5 items-start justify-start"
+        },
+        {
+            icon: <MdEmail className='text-4xl pr-2 text-primary' />,
+            text: "etbph.daoud@gmail.com",
+            class: "mb-4 flex max-w-[272px] gap-3 items-center justify-start"
+        },
+        {
+            icon: <FaPhone className='text-3xl pr-2 text-primary' />,
+            text: "05 58 58 70 81 appele pour sex",
+            class: "mb-4 flex max-w-[272px] gap-4 items-center justify-start"
         }
     ]
 }
@@ -111,6 +142,7 @@ export {
     faq,
     Landing,
     propreties,
+    footer,
     profile,
     FAQ,
     Propreties,

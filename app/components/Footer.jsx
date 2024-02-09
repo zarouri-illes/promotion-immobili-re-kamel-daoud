@@ -1,6 +1,8 @@
 import React from 'react'
+import { FaPhone } from 'react-icons/fa6'
 import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
+import { footer } from './const'
 
 const Footer = () => {
     return (             
@@ -13,22 +15,21 @@ const Footer = () => {
                         </h2>
 
                         <div className='flex lg:gap-8 md:gap-6 gap-8 mt-8 text-3xl text-white'>
-                            <a href="" target='_blank'><FaFacebook /></a>
-                            <a href="" target='_blank'><FaInstagram /></a>
-                            <a href="" target='_blank'><FaTiktok /></a>
-                            <a href="" target='_blank'><FaYoutube /></a>
+                            {
+                                footer.socials.map((item) => (
+                                    <a href={item.link} target='_blank'>{item.icon}</a>
+                                ))
+                            }
                         </div>
                     </div>
 
                     <div class="max-[991px]:ml-4 max-[991px]:flex-none max-[767px]:ml-0 max-[767px]:mt-8">
-                        <div class="mb-4 flex max-w-[272px] items-start justify-start">
-                            <FaLocationDot className='text-4xl pr-2 text-primary' />
-                            <p>8502 Preston Rd. Inglewood, Maine 98380, USA</p>
+                        {footer.extra.map((item)=>(
+                        <div class={`${item.class}`}>
+                            {item.icon}
+                            <p className=''>{item.text}</p>
                         </div>
-                        <div class="mb-4 flex max-w-[272px] items-center justify-start">
-                            <MdEmail className='text-4xl pr-2 text-primary' />
-                            <p>support@flowspark.co</p>
-                        </div>
+                        ))}
                     </div>
                 </div>   
             </div>
