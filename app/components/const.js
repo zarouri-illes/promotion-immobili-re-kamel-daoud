@@ -51,7 +51,7 @@ const faq = [
 ];
 
 const profile = {
-    name: "Formation ISO",
+    name: "Certificat ISO 9001",
     description: "La promotion Immobilière Daoud Kamel se lance dans le cours sur les normes ISO avec enthousiasme. À la recherche de l'excellence, l'agence vise à perfectionner sa gestion de la qualité, intégrant les principes et pratiques pour garantir une conformité optimale et renforcer sa réputation dans le secteur immobilier.",
     image: {
         link: "/logo.png",
