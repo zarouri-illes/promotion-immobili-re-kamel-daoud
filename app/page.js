@@ -1,12 +1,15 @@
-import { Accordion, FAQ, Footer, Landing, Profile, Propreties } from "./components/const";
+import Reviews from "./components/Reviews";
+import { Accordion, FAQ, Footer, Landing, Profile, Propreties, Socials } from "./components/const";
 
 export default function Home() {
     return (
         <>
             <Landing />
-            <Propreties />
-            <Profile />
+            <Propreties />            
+            <Profile />           
+            <Reviews />
             <FAQ />
+            <Socials />
             <Footer />
         </>
     )
