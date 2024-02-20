@@ -1,11 +1,10 @@
 import { socials } from './const'
-import { MdEmail } from 'react-icons/md'
 
 const Socials = () => {
     return (
         <section class="bg-white dark:bg-gray-900 mt-12">
             <div class="md:px-[70px] h-auto px-8 w-full py-12 mx-auto">
-                <div className="mb-4 w-full">
+                <div className="lg:mb-4 mb-[-20px] w-full">
                     <p className="text-primary xl:text-2xl md:text-lg">{socials.miniTitle}</p>
                     <h2 className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary">{socials.title}</h2>
                 </div>
