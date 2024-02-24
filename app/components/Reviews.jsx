@@ -7,8 +7,8 @@ const Reviews = () => {
         <section>
             <div class="md:px-[70px] h-auto px-8 w-full py-12 mx-auto">
                 <div className="lg:mb-4 w-full">
-                    <p className="text-primary xl:text-2xl md:text-lg">Fuk sum right</p>
-                    <h2 className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary">This shit is outta control</h2>
+                    <p className="text-primary xl:text-2xl md:text-lg">Lorem ipsum</p>
+                    <h2 className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary"> lorem ipsum iair dlal xk</h2>
                 </div>
 
                 <div className='mt-8 text-white flex flex-col md:flex-row gap-4'>
