@@ -1,21 +1,43 @@
+"use client"
+
 import { FaLocationDot } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
 import { TfiLayoutPlaceholder } from "react-icons/tfi";
 import { propreties } from "./const";
+import { motion } from "framer-motion";
 
 const Propreties = () => {
+    
     return (
-        <section className="md:px-[70px] h-auto px-8 w-full overflow-hidden relative place-items-center mt-16">
+        <section className="md:px-[70px] px-8 w-full overflow-hidden relative place-items-center mt-16">
 
             <div className="mb-4 w-full">
-                <p className="text-primary xl:text-2xl md:text-lg">Featured listings</p>
-                <h2 className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary">Available Propreties</h2>
+                <motion.p 
+                initial={{ x : -200, opacity: 0}}
+                whileInView={{ x : 0, opacity: 1}}
+                transition={{duration:1, delay: 0.3}}
+                className="text-primary xl:text-2xl md:text-lg">Featured listings</motion.p>
+                <motion.h2 
+                initial={{ x : -200, opacity: 0}}
+                whileInView={{ x : 0, opacity: 1}}
+                transition={{duration:1}}
+                className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary">Available Propreties</motion.h2>
             </div>
 
-            <div className=" flex flex-nowrap lg:mt-8 overflow-x-auto whitespace-nowrap pb-8 gap-4">
+            <motion.div
+            initial={{}}
+            animate={{}}
+            transition={{staggerChildren: 1}}
+            className=" flex flex-nowrap lg:mt-8 overflow-x-auto whitespace-nowrap pb-8 gap-4">
                 {
                     propreties.map((item) => (
-                        <div className="border rounded-[10px]">
+                        <motion.div 
+                        initial={{y:200, opacity:0}}
+                        transition={{ duration: 1, delay: item.num}}
+                        whileInView={{y:0 , opacity:1
+                        }}
+
+                        className="border rounded-[10px]">
                             <div>
                                 <img src={item.image.link} alt={item.image.alt} className="rounded-t-[10px]"/>
                             </div>
@@ -38,10 +60,10 @@ const Propreties = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                 }
-            </div>
+            </motion.div>
         </section>
     )
 }

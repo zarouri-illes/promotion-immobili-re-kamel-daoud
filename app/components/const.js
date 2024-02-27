@@ -50,7 +50,8 @@ const propreties = [
         image: {
             link: "/propreties/ap1.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
-        }
+        },
+        num:0.2,
     },
     {
         address: "El Riche, Bouira",
@@ -60,7 +61,8 @@ const propreties = [
         image: {
             link: "/propreties/ap1.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
-        }
+        },
+        num:0.5,
     },
     {
         address: "El Riche, Bouira",
@@ -70,7 +72,8 @@ const propreties = [
         image: {
             link: "/propreties/ap1.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
-        }
+        },
+        num:0.7,
     },
 ]
 
