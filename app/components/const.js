@@ -4,10 +4,10 @@ import Accordion from "./Accordion";
 import OldProjects from "./OldProjects";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
-import { FaPhone } from 'react-icons/fa6'
 import Profile from "./Profile";
+import { FaStar } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md'
-import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube, FaPhone } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import Socials from "./Socials";
 
@@ -77,8 +77,6 @@ const propreties = [
     },
 ];
 
-const testVar = 5;
-
 const faq = [
     {
         question: "Question 1",
@@ -146,6 +144,19 @@ const footer = {
     ]
 };
 
+const reviews = [
+    {
+        par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
+        name: "Zarouri Illes",
+        appartement: "Lorem ipsum dolor sit.",
+    },
+    {
+        par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
+        name: "Zarouri Illes",
+        appartement: "Lorem ipsum dolor sit.",
+    }
+]
+
 const socials = {
     miniTitle: "Plus d'informations",
     title: "Pour nous contacter",
@@ -179,6 +190,7 @@ export {
     header,
     socials,
     Footer,
+    reviews,
     Profile,
     Accordion,
     OldProjects,
