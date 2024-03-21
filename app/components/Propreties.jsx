@@ -3,7 +3,7 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
 import { TfiLayoutPlaceholder } from "react-icons/tfi";
-import { propreties } from "./const";
+import { Title, propreties } from "./const";
 import { motion } from "framer-motion";
 
 const Propreties = () => {
@@ -11,23 +11,9 @@ const Propreties = () => {
     return (
         <section className="md:px-[70px] px-8 w-full overflow-hidden relative place-items-center mt-16">
 
-            <div className="mb-4 w-full">
-                <motion.p 
-                initial={{ x : -200, opacity: 0}}
-                whileInView={{ x : 0, opacity: 1}}
-                transition={{duration:1, delay: 0.3}}
-                className="text-primary xl:text-2xl md:text-lg">Featured listings</motion.p>
-                <motion.h2 
-                initial={{ x : -200, opacity: 0}}
-                whileInView={{ x : 0, opacity: 1}}
-                transition={{duration:1}}
-                className="md:text-3xl xl:text-5xl text-2xl font-bold text-secondary">Available Propreties</motion.h2>
-            </div>
+            <Title miniTitle="test" title="test 3" />
 
-            <motion.div
-            initial={{}}
-            animate={{}}
-            transition={{staggerChildren: 1}}
+            <div
             className=" flex flex-nowrap lg:mt-8 overflow-x-auto whitespace-nowrap pb-8 gap-4">
                 {
                     propreties.map((item) => (
@@ -63,7 +49,7 @@ const Propreties = () => {
                         </motion.div>
                     ))
                 }
-            </motion.div>
+            </div>
         </section>
     )
 }

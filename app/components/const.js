@@ -10,6 +10,7 @@ import { MdEmail } from 'react-icons/md'
 import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube, FaPhone } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import Socials from "./Socials";
+import Title from "./Title";
 
 const header = {
     address: "Banque ABC, Bouira",
@@ -148,12 +149,12 @@ const reviews = [
     {
         par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
         name: "Zarouri Illes",
-        appartement: "Lorem ipsum dolor sit.",
+        appartement: "Duplex, El Asnam",
     },
     {
         par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
-        name: "Zarouri Illes",
-        appartement: "Lorem ipsum dolor sit.",
+        name: "Daoud Dhia Eddine",
+        appartement: "F5, El Rich.",
     }
 ]
 
@@ -194,5 +195,6 @@ export {
     Profile,
     Accordion,
     OldProjects,
-    Socials
+    Socials,
+    Title
 }

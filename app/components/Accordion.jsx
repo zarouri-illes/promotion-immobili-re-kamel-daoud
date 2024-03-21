@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa6";
-import { IoArrowDownCircleSharp } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Accordion = ({question, answer}) => {

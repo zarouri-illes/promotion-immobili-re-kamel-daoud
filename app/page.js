@@ -1,5 +1,5 @@
 import Reviews from "./components/Reviews";
-import { Accordion, FAQ, Footer, Landing, Profile, Propreties, Socials } from "./components/const";
+import { Accordion, FAQ, Footer, Landing, OldProjects, Profile, Propreties, Socials } from "./components/const";
 
 export default function Home() {
     return (
@@ -9,6 +9,7 @@ export default function Home() {
             <Profile />           
             <Reviews />
             <FAQ />
+            <OldProjects/>
             <Socials />
             <Footer />
         </>
