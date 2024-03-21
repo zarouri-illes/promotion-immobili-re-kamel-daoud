@@ -77,7 +77,7 @@ const propreties = [
     },
 ];
 
-const testVar = 2;
+const testVar = 5;
 
 const faq = [
     {
