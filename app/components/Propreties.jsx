@@ -5,13 +5,16 @@ import { IoBedOutline } from "react-icons/io5";
 import { TfiLayoutPlaceholder } from "react-icons/tfi";
 import { Title, propreties } from "./const";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Propreties = () => {
+
+    const [onView, setView] = useState(false);
     
     return (
         <section className="md:px-[70px] px-8 w-full overflow-hidden relative place-items-center mt-16">
 
-            <Title miniTitle="test" title="test 3" />
+            <Title miniTitle="Featured Listings" title="Avalaible appartements" />
 
             <div
             className=" flex flex-nowrap lg:mt-8 overflow-x-auto whitespace-nowrap pb-8 gap-4">
@@ -20,10 +23,10 @@ const Propreties = () => {
                         <motion.div 
                         initial={{y:200, opacity:0}}
                         transition={{ duration: 1, delay: item.num}}
-                        whileInView={{y:0 , opacity:1
-                        }}
+                        onViewportEnter={ () => setView(true) }
+                        animate={ onView ? { y: 0, opacity: 1 } : {} }
 
-                        className="border rounded-[10px]">
+                        className="border rounded-[10px] z-[41684]">
                             <div>
                                 <img src={item.image.link} alt={item.image.alt} className="rounded-t-[10px]"/>
                             </div>

@@ -150,11 +150,13 @@ const reviews = [
         par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
         name: "Zarouri Illes",
         appartement: "Duplex, El Asnam",
+        delay: 0.2
     },
     {
         par: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis     libero cumque facere, consequatur dolorem?",
         name: "Daoud Dhia Eddine",
         appartement: "F5, El Rich.",
+        delay: 0.5
     }
 ]
 

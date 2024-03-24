@@ -32,7 +32,7 @@ export const Landing = () => {
                         !open ? <FaBarsStaggered className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} /> : <MdClose className="font-bold text-2xl absolute right-8 md:hidden" onClick={() => toggleOpen()} />
                     }
 
-                    <ul className="hidden md:absolute lg:right-[250px] md:right-[100px] xl:right-[500px] list-none md:flex gap-8 items-center">
+                    <ul className="hidden md:absolute lg:right-[450px] md:right-[200px] xl:right-[550px] list-none md:flex gap-8 items-center">
                         {
                             header.list.map((item) => (
                                 <li>

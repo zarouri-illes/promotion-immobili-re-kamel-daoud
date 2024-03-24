@@ -9,7 +9,6 @@ export default function Home() {
             <Profile />           
             <Reviews />
             <FAQ />
-            <OldProjects/>
             <Socials />
             <Footer />
         </>
