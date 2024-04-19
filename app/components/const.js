@@ -1,11 +1,9 @@
 import {Landing} from "./Landing";
 import Propreties from "./Propreties";
 import Accordion from "./Accordion";
-import OldProjects from "./OldProjects";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Profile from "./Profile";
-import { FaStar } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md'
 import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube, FaPhone } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from "react-icons/hi2";
@@ -45,8 +43,8 @@ const header = {
 const propreties = [
     {
         address: "El Riche, Bouira",
-        title: "Appartement F3",
-        bed: "3",
+        title: "Projet El Riche 1",
+        bed: "30",
         surface: "45",
         image: {
             link: "/propreties/ap1.jpg",
@@ -196,7 +194,6 @@ export {
     reviews,
     Profile,
     Accordion,
-    OldProjects,
     Socials,
     Title
 }

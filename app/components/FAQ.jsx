@@ -12,7 +12,7 @@ const FAQ = () => {
     const [inView, setView] = useState(false);
 
     return (
-        <section className="w-full mt-16 px-8 md:px-16 xl:px-16">
+        <section className="w-full mb-32 mt-16 px-8 md:px-16 xl:px-16">
             
             <Title title="Questions fréquemment posées" miniTitle="Q&A" />
 

@@ -10,7 +10,7 @@ const Socials = () => {
 
     return (
         <section class="bg-white mt-12">
-            <div class="md:px-[70px] h-auto px-8 w-full py-12 mx-auto">
+            <div class="w-full mt-16 px-8 md:px-16 xl:px-16">
                 
                 <Title title={socials.title} miniTitle={socials.miniTitle} />
 

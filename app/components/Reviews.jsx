@@ -11,7 +11,7 @@ const Reviews = () => {
     const [onView, setView] = useState(false);
 
     return (
-        <section className="md:px-[70px] h-auto px-8 w-full py-16 mx-auto">
+        <section className="w-full mt-32 mb-32 px-8 md:px-16 xl:px-16">
 
             <Title title="Les avis de nos clients" miniTitle="Commentaires" />
 

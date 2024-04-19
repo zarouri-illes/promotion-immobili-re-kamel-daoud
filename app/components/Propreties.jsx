@@ -1,8 +1,9 @@
 "use client"
 
 import { FaLocationDot } from "react-icons/fa6";
-import { IoBedOutline } from "react-icons/io5";
 import { TfiLayoutPlaceholder } from "react-icons/tfi";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { FaBuilding } from "react-icons/fa";
 import { Title, propreties } from "./const";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -12,7 +13,7 @@ const Propreties = () => {
     const [onView, setView] = useState(false);
     
     return (
-        <section className="md:px-[70px] px-8 w-full overflow-hidden relative place-items-center mt-16">
+        <section className="w-full px-8 md:px-16 xl:px-16 overflow-hidden relative place-items-center my-16">
 
             <Title miniTitle="Featured Listings" title="Avalaible appartements" />
 
@@ -37,9 +38,9 @@ const Propreties = () => {
 
                                 <ul className="flex items-center flex-wrap gap-4 mt-8">
                                     <li className="flex items-center lg:text-2xl gap-1">
-                                        <IoBedOutline className="text-primary text-3xl lg:text-5xl" />
+                                        <FaBuilding className="text-primary text-3xl lg:text-3xl" />
                                         <strong>{item.bed}</strong>
-                                        Bedrooms
+                                        Appartements
                                     </li>
 
                                     <li className="flex  items-center lg:text-2xl gap-2">
@@ -48,6 +49,10 @@ const Propreties = () => {
                                         m²
                                     </li>
                                 </ul>
+
+                                <div className="mt-8 w-full place-content-end flex justify-end">
+                                    <MdOutlineKeyboardDoubleArrowRight className="text-primary cursor-pointer text-4xl" />
+                                </div>
                             </div>
                         </motion.div>
                     ))
