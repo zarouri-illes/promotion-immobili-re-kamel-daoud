@@ -3,7 +3,7 @@ import React from 'react'
 
 const Button = (props) => {
     return (
-        <Link href="/">
+        <Link href={props.link}>
             <button className='text-xl font-semibold capitalize text-primary'>
             {props.title}
             </button>

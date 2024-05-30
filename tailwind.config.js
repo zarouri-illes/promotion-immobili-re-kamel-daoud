@@ -11,6 +11,8 @@ module.exports = {
       lightRed: "#FFD9D9",
       secondary: "#1C2833",
       white: "#fff",
+      green: "#52BE80",
+      orange: "#F5B041",
       gray: "rgb(75 85 99)"
     },
     extend: {

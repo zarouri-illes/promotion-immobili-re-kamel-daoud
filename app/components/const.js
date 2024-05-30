@@ -1,4 +1,5 @@
 import {Landing} from "./Landing";
+import Navbar from "./Navbar";
 import Propreties from "./Propreties";
 import Accordion from "./Accordion";
 import FAQ from "./FAQ";
@@ -7,7 +8,7 @@ import Profile from "./Profile";
 import { MdEmail } from 'react-icons/md'
 import { FaFacebook, FaInstagram, FaLocationDot, FaTiktok, FaYoutube, FaPhone } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import Socials from "./Socials";
+import Socials from './Socials';
 import Title from "./Title";
 
 const header = {
@@ -26,12 +27,12 @@ const header = {
             link: "/",
         },
         {
-            title: "A propos",
-            link: "/",
+            title: "À propos",
+            link: "/apropos",
         },
         {
             title: "Projets",
-            link: "/",
+            link: "/projets",
         },
         {
             title: "Contact",
@@ -40,39 +41,44 @@ const header = {
     ]
 };
 
+// 0: sold out, 1: available, 2: under construction
 const propreties = [
     {
         address: "El Riche, Bouira",
-        title: "Projet El Riche 1",
-        bed: "30",
+        title: "Résidence El Riche 1",
+        bed: "26",
         surface: "45",
         image: {
-            link: "/propreties/ap1.jpg",
+            link: "/propreties/83log.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
         },
         num:0.2,
+        situation: 0,
     },
     {
         address: "El Riche, Bouira",
-        title: "Appartement F3",
-        bed: "3",
+        title: "Résidence 3",
+        bed: "128",
         surface: "45",
         image: {
             link: "/propreties/ap1.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
         },
         num:0.5,
+        situation: 1,
+
     },
     {
         address: "El Riche, Bouira",
-        title: "Appartement F3",
-        bed: "3",
+        title: "Résidence El Riche 2",
+        bed: "83",
         surface: "45",
         image: {
-            link: "/propreties/ap1.jpg",
+            link: "/propreties/constru.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
         },
         num:0.7,
+        situation: 2,
     },
 ];
 
@@ -93,7 +99,7 @@ const faq = [
 
 const profile = {
     name: "Certificat ISO 9001",
-    description: "La promotion Immobilière Daoud Kamel se lance dans le cours sur les normes ISO avec enthousiasme. À la recherche de l'excellence, l'agence vise à perfectionner sa gestion de la qualité, intégrant les principes et pratiques pour garantir une conformité optimale et renforcer sa réputation dans le secteur immobilier.",
+    description: "La Promotion Immobilière Daoud Kamel se lance dans le système management qualité, Autrement la structuration de l'entreprise selon les normes ISO 9001 avec enthesiuasme. À la recherche de l'excellence, L'agence vise à perfectionner sa gestion de la qualité, intégrant les principes et pratiques du Management de la qualité pour garantir une conformité optimale et renforcer sa réputation dans le secteur immobilier.",
     image: {
         link: "/logo.png",
         alt: "Kamel Daoud immobilier promotion bouira" 
@@ -183,6 +189,7 @@ const socials = {
 export {
     faq,
     Landing,
+    Navbar,
     propreties,
     footer,
     profile,

@@ -7,6 +7,7 @@ import { FaBuilding } from "react-icons/fa";
 import { Title, propreties } from "./const";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Situ from "./Situ";
 
 const Propreties = () => {
 
@@ -27,33 +28,43 @@ const Propreties = () => {
                         onViewportEnter={ () => setView(true) }
                         animate={ onView ? { y: 0, opacity: 1 } : {} }
 
-                        className="border rounded-[10px] z-[41684]">
+                        className="border flex flex-col justify-between rounded-[10px] z-[41684]">
                             <div>
-                                <img src={item.image.link} alt={item.image.alt} className="rounded-t-[10px]"/>
-                            </div>
+                                <div className="relative">
+                                    <img width={500} height={700} src={item.image.link} alt={item.image.alt} className="rounded-t-[10px]"/>
+                                    
+                                    {
+                                        item.situation == 0? <Situ text="Vendu" color="bg-primary" /> :
+                                        item.situation == 1? <Situ text="Disponible" color="bg-green" />:
+                                        <Situ text="En cours de construction" color="bg-orange" />
+                                    }
+                                </div>
 
-                            <div className="mt-2 px-4 pb-6">
+                                <div className="mt-2 px-4">
                                 <p className="flex items-center gap-1 font-medium lg:text-xl text-secondary"><FaLocationDot className="text-primary lg:text-3xl" /> {item.address}</p>
                                 <h2 className="font-bold text-2xl mt-2 lg:text-3xl">{item.title}</h2>
 
-                                <ul className="flex items-center flex-wrap gap-4 mt-8">
-                                    <li className="flex items-center lg:text-2xl gap-1">
+                                <ul className=" items-center flex-wrap gap-4 mt-8">
+                                    <li className="flex items-center lg:text-2xl gap-6">
                                         <FaBuilding className="text-primary text-3xl lg:text-3xl" />
-                                        <strong>{item.bed}</strong>
-                                        Appartements
+                                        <strong>{item.bed} Log</strong>
                                     </li>
 
-                                    <li className="flex  items-center lg:text-2xl gap-2">
-                                        <TfiLayoutPlaceholder className="text-primary text-xl lg:text-4xl" />
-                                        <strong>{item.surface}</strong>
-                                        m²
-                                    </li>
+                                    <br />
+
+                                    
                                 </ul>
-
-                                <div className="mt-8 w-full place-content-end flex justify-end">
-                                    <MdOutlineKeyboardDoubleArrowRight className="text-primary cursor-pointer text-4xl" />
                                 </div>
                             </div>
+
+                            <div className="px-4 pb-4">
+
+                                <div className=" w-full place-content-end flex justify-end">
+                                    <MdOutlineKeyboardDoubleArrowRight className="text-primary cursor-pointer text-4xl" />
+                                </div>                            
+                            </div>
+
+
                         </motion.div>
                     ))
                 }

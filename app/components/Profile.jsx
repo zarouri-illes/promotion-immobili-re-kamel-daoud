@@ -31,10 +31,6 @@ const Profile = () => {
                 className='space-y-6 xl:space-y-10'>
                     <h1 className='xl:text-6xl font-bold text-secondary lg:text-4xl'>{profile.name}</h1>
                     <p className='xl:text-xl text-lg text-gray md:max-w-[600px] lg:text-[15px]'>{profile.description}</p>
-                    <Link href={profile.button.link} target="_blank" className="flex transition-all items-center text-2xl text-primary font-bold text-center justify-start gap-4">
-                        {profile.button.text}
-                        <TiChevronRight />
-                    </Link>
                 </motion.div>
 
             </div>

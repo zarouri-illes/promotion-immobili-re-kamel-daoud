@@ -1,5 +1,5 @@
 import Reviews from "./components/Reviews";
-import { Accordion, FAQ, Footer, Landing, Profile, Propreties, Socials } from "./components/const";
+import { FAQ, Footer, Landing, Profile, Propreties, Socials } from "./components/const";
 
 export default function Home() {
     return (
