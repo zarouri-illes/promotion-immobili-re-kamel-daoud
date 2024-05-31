@@ -36,7 +36,7 @@ const header = {
         },
         {
             title: "Contact",
-            link: "/",
+            link: "/contact",
         }
     ]
 };
@@ -54,6 +54,7 @@ const propreties = [
         },
         num:0.2,
         situation: 0,
+        link: '/el-riche2'
     },
     {
         address: "El Riche, Bouira",
@@ -66,6 +67,7 @@ const propreties = [
         },
         num:0.5,
         situation: 1,
+        link: '/el-riche-2'
 
     },
     {
@@ -79,6 +81,7 @@ const propreties = [
         },
         num:0.7,
         situation: 2,
+        link: '/el-riche-2'
     },
 ];
 

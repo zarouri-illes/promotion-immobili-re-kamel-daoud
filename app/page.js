@@ -1,5 +1,5 @@
 import Reviews from "./components/Reviews";
-import { FAQ, Footer, Landing, Profile, Propreties, Socials } from "./components/const";
+import { FAQ, Landing, Profile, Propreties, Socials } from "./components/const";
 
 export default function Home() {
     return (
@@ -10,7 +10,6 @@ export default function Home() {
             <Reviews />
             <FAQ />
             <Socials />
-            <Footer />
         </>
     )
 }

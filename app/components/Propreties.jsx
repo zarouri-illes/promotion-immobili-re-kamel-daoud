@@ -8,6 +8,7 @@ import { Title, propreties } from "./const";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Situ from "./Situ";
+import Link from "next/link";
 
 const Propreties = () => {
 
@@ -60,7 +61,9 @@ const Propreties = () => {
                             <div className="px-4 pb-4">
 
                                 <div className=" w-full place-content-end flex justify-end">
-                                    <MdOutlineKeyboardDoubleArrowRight className="text-primary cursor-pointer text-4xl" />
+                                    <Link href={item.link}>
+                                        <MdOutlineKeyboardDoubleArrowRight className="text-primary cursor-pointer text-4xl" />
+                                    </Link>
                                 </div>                            
                             </div>
 
