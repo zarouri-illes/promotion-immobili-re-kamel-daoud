@@ -182,7 +182,7 @@ const socials = {
             value: "À côté de la banque ABC, Bouira, Algérie"
         },
         {
-            icon: <MdEmail className='text-primary text-xl xl:text-3xl'/>,
+            icon: <FaPhone className='text-primary text-xl xl:text-3xl'/>,
             title: "Numéro",
             value: "07 93 08 05 67"
         }
