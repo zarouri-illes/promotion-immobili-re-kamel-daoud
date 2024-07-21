@@ -44,8 +44,8 @@ export default function Navbar() {
         )}
 
         <ul className="hidden lg:right-[450px] md:right-[200px] xl:right-[550px] list-none md:flex gap-8 items-center">
-          {header.list.map((item) => (
-            <li>
+          {header.list.map((item, id) => (
+            <li key={id}>
               <Link
                 href={item.link}
                 className="font-bold xl:text-xl text-secondary cursor-pointer transition-all duration-500 lg:text-xl md:text-[16px] hover:text-primary"
@@ -59,13 +59,13 @@ export default function Navbar() {
         <div></div>
 
         <div
-          className={`md:hidden absolute left-0 z-[1000]  w-full px-8 transition-all duration-500 ${
+          className={`md:hidden absolute left-0 z-[64684864]  w-full px-8 transition-all duration-500 ${
             open ? "top-[110px]" : "top-[-410px]"
           } `}
         >
           <ul className="rounded-[10px] bg-white z-40 py-8 border list-none flex flex-col max-w-full gap-6 justify-center text-center items-center">
-            {header.list.map((item) => (
-              <li>
+            {header.list.map((item, id) => (
+              <li key={id}>
                 <Link href={item.link} className="font-bold text-secondary">
                   {item.title}
                 </Link>
