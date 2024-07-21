@@ -9,19 +9,14 @@ export default function page() {
                     className="w-[2000px] rounded-[10px]" />
                 </div>
 
-                <div>
-                    0558587081
-                    0770565092
-                </div>
-
                 <div className="flex flex-col md:space-y-16 items-start">
-                    <h1 className="md:text-5xl text-white font-bold">Lorem ipsum dolor sit amet.</h1>
+                    <h1 className="md:text-3xl text-white font-bold">Promotion immobilier DAOUD KAMEL</h1>
 
-                    <p className=" font-semibold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus optio atque laborum possimus eveniet iure earum hic quo commodi excepturi? Maiores vel explicabo soluta? Placeat, itaque doloremque. Sequi, eveniet iusto tenetur laboriosam optio a odio omnis expedita vitae et velit impedit nulla architecto tempora? Minima saepe mollitia officia cum.</p>
+                    <p className=" font-semibold text-white">Nous nous engageons à vous aider à trouver la maison de vos rêves. Notre mission est de fournir des services immobiliers exceptionnels avec une touche personnelle, garantissant que chaque client trouve la propriété idéale pour répondre à ses besoins.
 
-                    <Link href={"/projets"}>
-                        <button className="px-10 text-white cursor-pointer transition-all duration-300 hover:opacity-70 py-2 bg-primary rounded-[50px]">Voir les projets</button>
-                    </Link>
+                    Avec une base fondée sur la confiance, la transparence et l’intégrité, nous visons à construire des relations durables avec nos clients. De la consultation initiale à la clôture finale, nous fournissons des conseils honnêtes et une assistance complète, garantissant que vous vous sentez en confiance et informé à chaque étape du processus.</p>
+
+
                 </div>
             </section>
         </main>

@@ -44,34 +44,34 @@ const header = {
 // 0: sold out, 1: available, 2: under construction
 const propreties = [
     {
-        address: "El Riche, Bouira",
-        title: "Résidence El Riche 1",
-        bed: "26",
+        address: "Erriche, Bouira",
+        title: "28 Log en R+7 avec commerce.",
+        bed: 26,
+        surface: "45",
+        image: {
+            link: "/propreties/26.jpg",
+            alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
+        },
+        num:0.5,
+        situation: 0,
+        link: '/el-riche-2'
+
+    },
+    {
+        address: "Erriche, Bouira",
+        title: "83 Logements",
+        bed: 83,
         surface: "45",
         image: {
             link: "/propreties/83log.jpg",
             alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
         },
         num:0.2,
-        situation: 0,
+        situation: 2,
         link: '/el-riche2'
     },
     {
-        address: "El Riche, Bouira",
-        title: "Résidence 3",
-        bed: "128",
-        surface: "45",
-        image: {
-            link: "/propreties/ap1.jpg",
-            alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex"
-        },
-        num:0.5,
-        situation: 1,
-        link: '/el-riche-2'
-
-    },
-    {
-        address: "El Riche, Bouira",
+        address: "El Asnam, Bouira",
         title: "Résidence El Riche 2",
         bed: "83",
         surface: "45",

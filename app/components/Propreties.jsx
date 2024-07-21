@@ -32,29 +32,29 @@ const Propreties = () => {
                         className="border flex flex-col justify-between rounded-[10px] z-[41684]">
                             <div>
                                 <div className="relative">
-                                    <img width={500} height={700} src={item.image.link} alt={item.image.alt} className="rounded-t-[10px]"/>
+                                    <img width={500} src={item.image.link} alt={item.image.alt} className="rounded-t-[10px] h-[300px]"/>
                                     
                                     {
-                                        item.situation == 0? <Situ text="Vendu" color="bg-primary" /> :
-                                        item.situation == 1? <Situ text="Disponible" color="bg-green" />:
+                                        item.situation === 0? <Situ text="Vendu" color="bg-primary" /> :
+                                        item.situation === 1? <Situ text="Disponible" color="bg-green" />:
                                         <Situ text="En cours de construction" color="bg-orange" />
                                     }
                                 </div>
 
                                 <div className="mt-2 px-4">
-                                <p className="flex items-center gap-1 font-medium lg:text-xl text-secondary"><FaLocationDot className="text-primary lg:text-3xl" /> {item.address}</p>
-                                <h2 className="font-bold text-2xl mt-2 lg:text-3xl">{item.title}</h2>
+                                    <p className="flex items-center gap-1 font-medium lg:text-xl text-secondary"><FaLocationDot className="text-primary lg:text-3xl" /> {item.address}</p>
+                                    <div className="w-[100px]">
+                                        <h2 className="font-bold text-2xl mt-2 lg:text-2xl">{item.title}</h2>
+                                    </div>
 
-                                <ul className=" items-center flex-wrap gap-4 mt-8">
-                                    <li className="flex items-center lg:text-2xl gap-6">
-                                        <FaBuilding className="text-primary text-3xl lg:text-3xl" />
-                                        <strong>{item.bed} Log</strong>
-                                    </li>
+                                    <ul className=" items-center flex-wrap gap-4 mt-8">
+                                        <li className="flex items-center lg:text-2xl gap-6">
+                                            <FaBuilding className="text-primary text-3xl lg:text-3xl" />
+                                            <strong>{item.bed} Log</strong>
+                                        </li>
 
-                                    <br />
-
-                                    
-                                </ul>
+                                        <br />       
+                                    </ul>
                                 </div>
                             </div>
 
@@ -66,8 +66,6 @@ const Propreties = () => {
                                     </Link>
                                 </div>                            
                             </div>
-
-
                         </motion.div>
                     ))
                 }
