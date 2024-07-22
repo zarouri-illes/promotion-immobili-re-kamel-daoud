@@ -31,18 +31,15 @@ const page = () => {
           <Carousel slides={slides} />
         </div>
         <div className="w-full">
-        <h1 className="text-primary text-3xl font-bold">{details.title}</h1>
-        <br />
-        <br />
-        <p>{details.description}</p>
+          <h1 className="text-primary text-3xl font-bold">{details.title}</h1>
+          <br />
+          <br />
+          <p>{details.description}</p>
         </div>
       </div>
 
-      
-
       <section className="w-full mt-16 mb-32 px-8 md:px-16 xl:px-16">
-
-      <Situation situ={"sold"}/>
+        <Situation situ={"sold"} />
         <div>
           <Title title="Types d'appartements disponible" miniTitle="" />
 
@@ -88,8 +85,6 @@ const page = () => {
         </div>
 
         <Title title="Photos extérieures" miniTitle="" />
-
-        
       </section>
     </div>
   );
