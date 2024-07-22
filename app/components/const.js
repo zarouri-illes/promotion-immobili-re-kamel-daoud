@@ -5,6 +5,8 @@ import Accordion from "./Accordion";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Profile from "./Profile";
+import Situation from "./Situation";
+import Carousel from "./Carousel";
 import { MdEmail } from "react-icons/md";
 import {
   FaFacebook,
@@ -53,15 +55,15 @@ const propreties = [
   {
     address: "Erriche, Bouira",
     title: "28 Log en R+7 avec commerce.",
-    bed: 26,
+    bed: 28,
     surface: "45",
     image: {
       link: "/propreties/26.jpg",
       alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex",
     },
-    num: 0.5,
+    num: 0.1,
     situation: 0,
-    link: "/el-riche-2",
+    link: "/erriche-1",
   },
   {
     address: "Erriche, Bouira",
@@ -72,7 +74,7 @@ const propreties = [
       link: "/propreties/83log.jpg",
       alt: "Promotion immobiliere kamel daoud bouira f3 f2 f4 f5 duplex suplex",
     },
-    num: 0.2,
+    num: 0.4,
     situation: 2,
     link: "/el-riche2",
   },
@@ -216,4 +218,6 @@ export {
   Accordion,
   Socials,
   Title,
+  Situation,
+  Carousel,
 };
