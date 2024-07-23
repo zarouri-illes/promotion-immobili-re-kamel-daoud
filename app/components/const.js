@@ -6,7 +6,7 @@ import FAQ from "./FAQ";
 import Footer from "./Footer";
 import Profile from "./Profile";
 import Situation from "./Situation";
-import Carousel from "./Carousel";
+import { Carousel } from "./Carousel";
 import { MdEmail } from "react-icons/md";
 import {
   FaFacebook,
@@ -19,6 +19,7 @@ import {
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import Socials from "./Socials";
 import Title from "./Title";
+import CardApp from "./CardApp";
 
 const header = {
   address: "Banque ABC, Bouira",
@@ -220,4 +221,5 @@ export {
   Title,
   Situation,
   Carousel,
+  CardApp
 };

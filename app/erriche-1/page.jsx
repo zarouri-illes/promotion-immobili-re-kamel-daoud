@@ -3,8 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { Title } from "../components/const";
 import { FaRulerCombined, FaBed } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
-import { Situation, Carousel } from "../components/const";
-import Card from "../components/Card";
+import { Situation } from "../components/const";
+import  CardApp  from "../components/const";
+import { Carousel } from "../components/const";
 
 const page = () => {
   const slides = ["/riche1/pic2.jpg", "/riche1/pic3.jpg"];
@@ -49,7 +50,7 @@ const page = () => {
           <Title title="Types d'appartements disponible" miniTitle="" />
 
           {details.appa.map((item) => {
-            return <Card slides={item.image} />;
+            return <CardApp slides={item.image} />;
           })}
         </div>
       </section>

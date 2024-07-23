@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 
-export default function Carousel({ slides }) {
+const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
@@ -16,6 +16,8 @@ export default function Carousel({ slides }) {
     if (current === slides.length - 1) setCurrent(0);
     else setCurrent(current + 1);
   };
+
+  console.log(Carousel);
 
   return (
     <div className="overflow-hidden relative">
@@ -55,3 +57,5 @@ export default function Carousel({ slides }) {
     </div>
   );
 }
+
+export { Carousel }
