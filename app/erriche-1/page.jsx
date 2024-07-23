@@ -4,6 +4,7 @@ import { Title } from "../components/const";
 import { FaRulerCombined, FaBed } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { Situation, Carousel } from "../components/const";
+import Card from "../components/Card";
 
 const page = () => {
   const slides = ["/riche1/pic2.jpg", "/riche1/pic3.jpg"];
@@ -15,11 +16,15 @@ const page = () => {
     appa: [
       {
         name: "F3",
-        price: "",
+        price: 45644,
         surface: "90m²",
-        image: "/riche2/appa/f3.jpg",
+        image: [
+          "/riche2/appa/f3.jpg",
+          "/riche2/appa/f3.jpg",
+          "/riche2/appa/f3.jpg",
+        ],
         alt: "F3 bouira",
-        place: "Bloc A",
+        floor: 2,
       },
     ],
   };
@@ -43,48 +48,10 @@ const page = () => {
         <div>
           <Title title="Types d'appartements disponible" miniTitle="" />
 
-          <div className="pt-8">
-            <div className="flex gap-4  flex-wrap">
-              {details.appa.map((item, index) => (
-                <div
-                  className="space-y-6 border-[1px] rounded-[10px] border-secondary"
-                  key={index}
-                >
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-[400px] rounded-t-[10px]"
-                  />
-
-                  <div className="px-4">
-                    <h1 className="text-primary font-bold text-xl">
-                      {item.price}
-                    </h1>
-                    <h2 className="text-3xl text-secondary font-bold">
-                      {item.name}
-                    </h2>
-
-                    <div className="mt-10 pb-3 border-t-[1px] flex justify-between border-dashed border-primary">
-                      <div className="flex gap-2 p-2 items-center">
-                        <FaRulerCombined className="text-primary text-xl" />
-                        {item.surface}
-                      </div>
-                      <div className="flex gap-2 p-2 items-center">
-                        <MdPlace className="text-primary text-xl" />
-                        {item.place}
-                      </div>
-                      <div className="flex gap-2 p-2 items-center">
-                        <FaBed className="text-primary  text-xl" /> {item.rooms}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          {details.appa.map((item) => {
+            return <Card slides={item.image} />;
+          })}
         </div>
-
-        <Title title="Photos extérieures" miniTitle="" />
       </section>
     </div>
   );
